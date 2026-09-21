@@ -71,9 +71,11 @@ Run the script and copy the table it prints (also saved in `outputs/results.md`)
 
 | Model | RMSE | R² |
 |---|---|---|
-| Linear Regression | _x.xxxx_ | _x.xxxx_ |
-| Gradient Boosting (default) | _x.xxxx_ | _x.xxxx_ |
-| Gradient Boosting (tuned) | _x.xxxx_ | _x.xxxx_ |
+| Linear Regression | 0.9938 | 0.2612 |
+| Gradient Boosting (default) | 0.5408 | 0.7812 |
+| Gradient Boosting (tuned) | 0.5083 | 0.8068 |
+
+**Best params:** `{'learning_rate': 0.1, 'max_depth': 5, 'n_estimators': 200}`
 
 The target is expressed in units of $100,000, so an RMSE of 0.5 corresponds to an average error of roughly $50,000.
 
